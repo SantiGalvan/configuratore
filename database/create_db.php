@@ -132,8 +132,8 @@ try {
         lastname VARCHAR(100) NOT NULL,
         cap VARCHAR(255) NOT NULL,
         email VARCHAR(100) NOT NULL UNIQUE,
-        codice_fiscale VARCHAR(16),
-        piva VARCHAR(13))";
+        codice_fiscale VARCHAR(16) NOT NULL UNIQUE,
+        piva VARCHAR(13) NOT NULL UNIQUE)";
         $conn->query($sql);
     }
 
