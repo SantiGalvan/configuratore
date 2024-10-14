@@ -130,3 +130,5 @@ try {
     echo $err->getMessage();
     die();
 }
+
+$conn->close();
